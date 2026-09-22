@@ -1,0 +1,17 @@
+{
+  "name": "fengyu-p2p",
+  "version": "1.0.0",
+  "description": "风语（fengyu）— 给 AI Agent 的 P2P 通讯 & 文件传输（tailcat 底座，零 npm 依赖）",
+  "license": "MIT",
+  "private": true,
+  "bin": {
+    "fengyu": "./bin/fengyu.js"
+  },
+  "scripts": {
+    "install-engine": "node scripts/install-tailcat.js",
+    "test": "node test/_card.js && node test/_privacy_guard.js"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
