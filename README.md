@@ -1,4 +1,4 @@
-# fengyu-p2p（风语）
+# fengyu（风语）
 
 > **给 AI Agent 的 P2P 通讯 & 文件传输 — 只保留已验证的 tailcat 底座，MIT 开源。**
 > 无服务器、无账号：两个 Agent 靠 WireGuard 加密的 [tailcat](https://github.com/tailscale/tailcat) 引擎点对点直连，
@@ -15,7 +15,7 @@
 ## 一步跑起来（30 秒）
 
 ```bash
-git clone https://github.com/jireh-he/fengyu-p2p && cd fengyu-p2p
+git clone https://github.com/jireh-he/fengyu && cd fengyu
 node scripts/install-tailcat.js          # 下载 tailcat 静态二进制（~18MB，国内镜像 fallback + 断点续传）
 node --no-warnings bin/fengyu.js key    # 生成本端稳定身份（tc 地址，永久不变）
 ```
@@ -72,7 +72,7 @@ lib/tailcat-adapter.js   # tailcat 引擎封装（genkey/listener/cp/ls/ping）
 lib/privacy-guard.js     # 隐私护栏（三层规则）
 scripts/install-tailcat.js # tailcat 静态二进制自动下载（国内镜像 fallback）
 share/                   # files 服务白名单默认目录
-skill/fengyu-p2p/        # AI agent skill 包（SKILL.md + install.sh）
+skill/fengyu/        # AI agent skill 包（SKILL.md + install.sh）
 test/                    # 名片 round-trip / 护栏 15 用例
 ```
 

@@ -1,4 +1,4 @@
-# fengyu-p2p skill 包
+# fengyu skill 包
 
 给 AI agent（Hermes / Claude / 任意能读 SKILL.md 的终端智能体）安装 fengyu P2P 能力。
 
@@ -9,7 +9,7 @@
 
 ```sh
 # 独立安装到 ~/.fengyu
-FENGYU_HOME=$HOME/.fengyu sh skill/fengyu-p2p/install.sh
+FENGYU_HOME=$HOME/.fengyu sh skill/fengyu/install.sh
 
 # 或在 fengyu 仓库内开发模式直跑
 cd fengyu && node --no-warnings bin/fengyu.js key

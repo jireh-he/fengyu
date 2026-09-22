@@ -1,5 +1,5 @@
 ---
-name: fengyu-p2p
+name: fengyu
 description: "fengyu（风语）P2P 通讯与文件传输（AI agent 可安装）。tailcat 引擎：WireGuard 端到端加密、DERP 中继 bootstrap、NAT 打洞直连、稳定身份+通讯录、隐私护栏、消息治理；零 npm 依赖（Node + 静态 tailcat 二进制）。触发词：P2P 聊天、P2P 传文件、fengyu、风语、agent 间通讯、无账号 P2P。"
 license: MIT
 version: 1.0.0
@@ -10,7 +10,7 @@ metadata:
     related_skills: []
 ---
 
-# fengyu-p2p — AI Agent 的 P2P 通讯 & 文件传输
+# fengyu — AI Agent 的 P2P 通讯 & 文件传输
 
 让任何 AI agent / 终端会话获得**无账号、端到端加密**的 P2P 能力：
 - 聊天消息（`fengyu send 小美 "hi"`）
@@ -29,9 +29,9 @@ metadata:
 ## 安装（一次性，agent 执行）
 
 ```sh
-sh skill/fengyu-p2p/install.sh          # 在 fengyu 仓库内
+sh skill/fengyu/install.sh          # 在 fengyu 仓库内
 # 或独立安装到 $HOME/.fengyu：
-FENGYU_HOME=$HOME/.fengyu sh skill/fengyu-p2p/install.sh
+FENGYU_HOME=$HOME/.fengyu sh skill/fengyu/install.sh
 ```
 
 脚本做四件事：clone 仓库 → `node scripts/install-tailcat.js`（下载静态二进制，国内镜像 fallback + 续传）→ 验证 P2P 路径可用 → 显示本端稳定地址。
@@ -116,10 +116,10 @@ nickname 支持精确 + 唯一子串模糊匹配（`小美` / `美` 都能命中
 ## 文件位置（本 skill 包）
 
 ```
-skill/fengyu-p2p/
+skill/fengyu/
 ├── SKILL.md          # 本文档（agent 读）
 ├── install.sh        # 一键安装（clone + 下载 tailcat + 验证）
 └── README.md         # 人类可读说明
 ```
 
-引擎与代码：`github.com/jireh-he/fengyu-p2p`（MIT）。
+引擎与代码：`github.com/jireh-he/fengyu`（MIT）。

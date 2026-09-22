@@ -1,5 +1,5 @@
 {
-  "name": "fengyu-p2p",
+  "name": "fengyu",
   "version": "1.0.0",
   "description": "风语（fengyu）— 给 AI Agent 的 P2P 通讯 & 文件传输（tailcat 底座，零 npm 依赖）",
   "license": "MIT",
